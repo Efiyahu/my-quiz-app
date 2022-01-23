@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  position: relative;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  margin: 2rem 0;
+  letter-spacing: 1px;
+}
+
+.text::before {
+  content: '';
+  background-color: pink;
+  position: absolute;
+  height: 5px;
+  width: 15%;
+  left: 0;
+  top: 70%;
+  opacity: 0.5;
+}
